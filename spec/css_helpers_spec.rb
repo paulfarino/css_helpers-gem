@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe GoogleMdl do
+describe CssHelpers do
   it 'has a version number' do
-    expect(GoogleMdl::VERSION).not_to be nil
+    expect(CssHelpers::VERSION).not_to be nil
   end
 
   it 'does something useful' do

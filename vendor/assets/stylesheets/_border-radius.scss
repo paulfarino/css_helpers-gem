@@ -1,0 +1,40 @@
+// Radius Helpers
+// --------------------------------------------------
+// ex: .ras = border-radius: 2px;
+//     .rlm = {border-top-left-radius: 4px; border-top-right-radius: 4px;}
+//
+$directions: (
+  (t, top),
+  (r, right),
+  (b, bottom),
+  (l, left),
+  (a, all)
+);
+$radius_sizes:
+  (n, 0px!important),
+  (s, 2px!important),
+  (m, 4px!important),
+  (l, 6px!important)
+;
+
+@each $d, $direction in $directions {
+  @each $s, $size in $radius_sizes{
+    @if $direction == "top" or $direction == "bottom" {
+      .r#{$d}#{$s} {
+        border-#{$direction}-left-radius: $size;
+        border-#{$direction}-right-radius: $size;
+      }
+    }
+    @else if $direction == "left" or $direction == "right" {
+      .r#{$d}#{$s} {
+        border-top-#{$direction}-radius: $size;
+        border-bottom-#{$direction}-radius: $size;
+      }
+    }
+    @else {
+      .r#{$d}#{$s} {
+        border-radius: $size;
+      }
+    }
+  }
+}
