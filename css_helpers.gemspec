@@ -10,6 +10,8 @@ Gem::Specification.new do |s|
   s.email       = ["paul.farino1@gmail.com"]
   s.summary     = 'CSS Helpers'
   s.description = 'CSS Helpers description'
+  s.homepage    = 'http://www.paulfarino.com'
+  s.license     = 'MIT'
 
   s.test_files = Dir["test/**/*"]
   s.files        = `git ls-files`.split("\n")
