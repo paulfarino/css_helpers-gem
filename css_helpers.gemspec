@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
   s.files        = `git ls-files`.split("\n")
 
-  s.add_dependency "rails", "~> 4.2.3"
+  s.add_dependency "rails"
   s.add_dependency "sass"
   s.add_dependency "sass-rails"
   s.add_dependency "jquery"
