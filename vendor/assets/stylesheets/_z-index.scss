@@ -1,35 +1,10 @@
 // Z-Index Scale
 // --------------------------
-.zIndex-1 {
-  z-index: $zIndex-1;
-} 
-.zIndex-2 {
-  z-index: $zIndex-2;
-} 
-.zIndex-3 {
-  z-index: $zIndex-3;
-} 
-.zIndex-4 {
-  z-index: $zIndex-4;
-} 
-.zIndex-5 {
-  z-index: $zIndex-5;
-} 
-.zIndex-6 {
-  z-index: $zIndex-6;
-} 
-.zIndex-7 {
-  z-index: $zIndex-7;
-} 
-.zIndex-8 {
-  z-index: $zIndex-8;
-} 
-.zIndex-9 {
-  z-index: $zIndex-9;
-} 
-.zIndex-10 {
-  z-index: $zIndex-10;
-} 
+@for $i from 1 through 10 {
+  .z-index-#{$i}  {
+    z-index: #{$i*1000};
+  }
+}
 
 
 // Z-Index Depth
