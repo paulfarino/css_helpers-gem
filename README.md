@@ -15,9 +15,5 @@ Or install it yourself as:
 
     $ gem install css-helpers
 
-## Usage
-
-    $ color-cop
-    
 -------------
 Brought to you by [Paul Farino](https://github.com/paulfarino)
